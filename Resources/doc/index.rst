@@ -135,7 +135,7 @@ This example shows all the available annotations in action::
          * @ParamConverter("post", class="SensioBlogBundle:Post")
          * @Template("SensioBlogBundle:Annot:post.html.twig", vars={"post"})
          * @Cache(smaxage="15")
-         * @LastModified(param="post", method="getUpdatedAt")
+         * @LastModified("post.getUpdatedAt()")
          */
         public function showAction(Post $post)
         {
